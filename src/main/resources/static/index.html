@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal To-Do List</title>
+    <meta name="description" content="Sample to-do list">
+    <meta name="author" content="fooglish">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>to-do list</h1>
+        <div id="overlay"></div>
+    </header>
+    <div class="main">
+        
+    </div>
+    <div class="btn-container">
+        <div class="add-btn-container">
+            <button data-modal-target="#modal">Добавить</button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Добавить новую задачу</div>
+                <button data-modal-close class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="postForm">
+                    <input type="text" name="title" placeholder="Описание задачи">
+                    <input type="text" name="priority" placeholder="Приоритет (1-4)"> 
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="quoteBlock">
+            <div class="quoteBlock-body"></div>
+            <div class="quoteBlock-footer"></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
